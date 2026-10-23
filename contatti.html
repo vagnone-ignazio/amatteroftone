@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contatti — A Matter of Tone</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">A Matter of Tone</div>
+    <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+  </header>
+
+  <nav class="sidebar" id="sidebar">
+    <button class="close-btn" aria-label="Chiudi menu">✕</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prodotti.html">I prodotti</a></li>
+      <li><a href="chi-siamo.html">Chi siamo</a></li>
+      <li><a href="dove-siamo.html">Dove siamo</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Contatti</h1>
+    <p>Scrivici per informazioni sui prodotti, appuntamenti o richieste specifiche.</p>
+
+    <form action="https://formspree.io/f/INSERISCI_IL_TUO_ID" method="POST" class="contact-form">
+      <label>
+        Nome
+        <input type="text" name="nome" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Messaggio
+        <textarea name="messaggio" rows="5" required></textarea>
+      </label>
+      <button type="submit" class="btn">Invia</button>
+    </form>
+
+    <p style="margin-top: 2rem;">
+      Oppure scrivi a <a href="mailto:info@amatteroftone.com">info@amatteroftone.com</a>.
+    </p>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/footer.js"></script>
+  <script src="js/footer.js"></script>
+</body>
+</html>

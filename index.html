@@ -2,10 +2,84 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>A Matter of Tone</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>A Matter of Tone</h1>
-  <p>Sito in costruzione.</p>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="logo">A Matter of Tone</div>
+    <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false">☰</button>
+  </header>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar" id="sidebar">
+    <button class="close-btn" aria-label="Chiudi menu">✕</button>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="prodotti.html">I prodotti</a></li>
+      <li><a href="chi-siamo.html">Chi siamo</a></li>
+      <li><a href="dove-siamo.html">Dove siamo</a></li>
+      <li><a href="contatti.html">Contatti</a></li>
+      <li><a href="social.html">Social</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENUTO PRINCIPALE -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <h1>Casse acustiche fatte per ascoltare davvero</h1>
+      <p class="lead">Artigianato, materiali selezionati e un suono che rispetta la musica.</p>
+      <a href="prodotti.html" class="btn">Scopri i prodotti</a>
+    </section>
+
+    <!-- PRESENTAZIONE -->
+    <section class="intro">
+      <h2>Il suono come materia</h2>
+      <p>
+        A Matter of Tone nasce dall'idea che una cassa acustica non sia solo un oggetto,
+        ma uno strumento che deve scomparire per lasciare spazio alla musica. Ogni modello
+        è progettato e assemblato con cura, pensando a chi ascolta.
+      </p>
+    </section>
+
+    <!-- PRODOTTI IN EVIDENZA -->
+    <section class="featured">
+      <h2>In evidenza</h2>
+      <div class="grid">
+        <article class="card">
+          <div class="card-img">Model One</div>
+          <h3>Model One</h3>
+          <p>Cassa da scaffale, due vie, cabinet in legno.</p>
+        </article>
+        <article class="card">
+          <div class="card-img">Model Two</div>
+          <h3>Model Two</h3>
+          <p>Torre da pavimento, tre vie, basso profondo.</p>
+        </article>
+        <article class="card">
+          <div class="card-img">Model Three</div>
+          <h3>Model Three</h3>
+          <p>Monitor da studio, risposta lineare, near-field.</p>
+        </article>
+      </div>
+      <a href="prodotti.html" class="btn btn-outline">Vedi tutti i prodotti</a>
+    </section>
+
+    <!-- CTA FINALE -->
+    <section class="cta">
+      <h2>Vuoi ascoltarle dal vivo?</h2>
+      <p>Scrivici per un appuntamento o per informazioni sui modelli disponibili.</p>
+      <a href="contatti.html" class="btn">Contattaci</a>
+    </section>
+  </main>
+
+  <div id="footer-placeholder"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/footer.js"></script>
 </body>
 </html>
