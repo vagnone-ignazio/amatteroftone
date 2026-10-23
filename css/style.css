@@ -37,28 +37,47 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-  background: var(--bg);
+  padding: 1.2rem 2rem;
+  background: rgba(15, 15, 15, 0.85); /* Sfondo semi-trasparente */
+  backdrop-filter: blur(10px); /* Effetto vetro sfocato */
+  -webkit-backdrop-filter: blur(10px); /* Supporto per Safari */
   border-bottom: 1px solid var(--border);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* Ombra morbida per staccare la barra */
   position: sticky;
   top: 0;
   z-index: 100;
+  transition: all 0.3s ease;
 }
 
 .logo {
-  font-size: 1.1rem;
-  letter-spacing: 2px;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
   text-transform: uppercase;
   font-weight: 600;
+  color: var(--text);
+  transition: color 0.3s ease;
 }
 
+/* Effetto al passaggio del mouse sul logo */
+.logo:hover {
+  color: var(--accent);
+}
+
+/* Pulsante hamburger migliorato */
 .menu-toggle {
   background: none;
   border: none;
   color: var(--text);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   cursor: pointer;
   line-height: 1;
+  padding: 0.2rem 0.5rem;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.menu-toggle:hover {
+  color: var(--accent);
+  transform: scale(1.1); /* Leggero ingrandimento al passaggio del mouse */
 }
 
 /* Sidebar */
