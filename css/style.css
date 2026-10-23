@@ -514,3 +514,91 @@ h2 {
   margin-bottom: 1rem;
   display: block;
 }
+/* Pagina Eventi */
+.event-list {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.event-card {
+  display: flex;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.event-date {
+  background: var(--border);
+  color: var(--text);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+  border-right: 1px solid #333;
+}
+
+.event-date .day {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.event-date .month {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 0.2rem;
+}
+
+.event-details {
+  padding: 1.5rem;
+  flex: 1;
+}
+
+.event-details h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+
+.event-location {
+  font-size: 0.9rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.event-details p {
+  margin-bottom: 1.5rem;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+@media (max-width: 600px) {
+  .event-card {
+    flex-direction: column;
+  }
+  .event-date {
+    flex-direction: row;
+    padding: 1rem;
+    border-right: none;
+    border-bottom: 1px solid #333;
+    gap: 0.5rem;
+  }
+  .event-date .day {
+    font-size: 1.5rem;
+  }
+  .event-date .month {
+    margin-top: 0;
+    align-self: center;
+  }
+}
